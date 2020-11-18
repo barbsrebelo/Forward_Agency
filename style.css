@@ -1,0 +1,53 @@
+html, body, section {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.left-half {
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.right-half {
+  background-color: #202020;
+  flex: 1;
+}
+
+.underscore {
+  background-color: #ffffff;
+}
+
+
+img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 25px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body, section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1281px) {
+   body, section {
+    width: 100%;
+  }
+}
