@@ -1,0 +1,65 @@
+html, body, section {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.left-half {
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.title-left {
+  position: fixed;
+  padding-top: 40px;
+  left: 13rem;
+}
+
+.right-half {
+  background-color: #202020;
+  flex: 1;
+}
+
+.title-right {
+  position: absolute;
+  margin-left: 35px;
+}  
+
+.line {
+  position: fixed;
+  margin-left: 35px;
+}
+
+
+.logo {
+  position: absolute;
+  bottom: 5;
+  right: 5;
+  margin: 20px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .title-left{
+    left: 1rem;
+    width: 38%;
+  }
+}  
+
+@media (max-width: 1281px) {
+  .title-left{
+    left: 5rem;
+    width: 38%;
+  }
+}
