@@ -36,6 +36,13 @@ div {
   flex: 1;
 }
 
+.title-left {
+  width: 60%;
+  position: absolute;
+  left: 26%;
+  bottom: 43%;
+}
+
 .split.right {
   position: absolute;
   right:0;
@@ -43,6 +50,23 @@ div {
   flex: 1;
 }
 
+.half-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+ .title-right {
+    width: 40%;
+    position: absolute;
+    right: 52%;
+    bottom: 45%;
+}
+
+.line {
+    margin: 0;
+    top: -2.5rem;
+    position: relative;                      
+}
 
 .logo {
   position: absolute;
@@ -51,30 +75,37 @@ div {
   margin: 20px;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+
+@media (min-width: 1024px) and (max-width: 1339px) {
   .title-left {
     left: 3%;
   }
 
   .title-right {
     right: 11rem;
-
+    margin: 0;
+    position: relative;
+    top: 38px;
   }
+
+  .line {
+    top: -2.5rem;
+    left: 1.5rem;
+  } 
 }  
 
 @media (max-width: 1440px) {
   .title-left {
-    position: absolute;
     left: 26%;
     bottom: 43%;
   }
 
   .title-right {
-    position: absolute;
-    right: 52%;
+    right: 48%;
     bottom: 45%;
   }
   .line {
-    margin: 49px;
+    top: -0.5rem;
+    left: 61px;
   }    
 }
